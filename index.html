@@ -18,8 +18,8 @@
   </head>
   <body class="page">
     <header class="header card">
-      <h1 class="header__title">&lt;/HTML&gt;</h1>
-      <span class="header__subtitle">закрывающий тег</span>
+      <a class="header__title">&lt;/html&gt;</a>
+      <h1  class="header__subtitle">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -351,42 +351,43 @@
         </button>
       </div>
       </article>
-    </main>
-    <footer class="footer">
-      <button 
-       type="button"
-       class="footer__button button"
-       onclick="window.box.showModal();"
-       aria-controls="box"
-       >
-        <svg class="footer__icon"
-         xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 40 40"
-          >
-          <use href="./svg/floppy.svg#floppy">
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-      <dialog class="dialog" id="box">
-        <div class="dialog__content">
-          <svg
-            class="dialog__icon"
-          >
-            <use href="svg/floppy.svg#floppy" />
+      <div class="footer">
+        <button 
+         type="button"
+         class="footer__button button"
+         onclick="window.box.showModal();"
+         aria-controls="box"
+         >
+          <svg class="footer__icon"
+           xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 40 40"
+            >
+            <use href="./svg/floppy.svg#floppy">
           </svg>
-          <h2 class="dialog__title">Вставьте дискету, чтобы продолжить</h2>
-        </div>
-        <button
-          class="dialog__button button"
-          type="button"
-          onclick="window.box.close()"
-        >
-        <span class="button__text">
-          ОК
-        </span>
+          <span class="button__text">Сохранить на память</span>
         </button>
-      </dialog>
-    </footer>
+        <dialog class="dialog" id="box">
+          <div class="dialog__content">
+            <svg
+              class="dialog__icon"
+            >
+              <use href="svg/floppy.svg#floppy" />
+            </svg>
+            <h2 class="dialog__title">Вставьте дискету,&nbsp;чтобы продолжить</h2>
+          </div>
+          <form method="dialog">
+          <button
+            class="dialog__button button"
+            type="submit"
+          >
+          <span class="dialog__button-text">
+            ок
+          </span>
+          </button>
+        </form>
+        </dialog>
+      </div>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
